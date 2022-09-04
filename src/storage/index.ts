@@ -15,7 +15,7 @@ const stringCodec = StringCodec();
 const typeormConnection = await typeorm();
 
 // This subscription listens for `test.find` requests and returns content from table `User`
-const sub = natsConnection.subscribe('test.find');
+const sub = natsConnection.subscribe('test.find', { queue: 'test.find'});
 console.log(`listening for ${sub.getSubject()} requests...`);
 for await (const m of sub) {
   if (m.respond(stringCodec.encode(JSON.stringify(await typeormConnection.manager.find(User))))) {
