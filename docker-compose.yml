@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres:14.5-alpine'
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./.env
+  nats:
+    image: 'nats:2.8-alpine'
+    ports:
+      - '4222:4222'

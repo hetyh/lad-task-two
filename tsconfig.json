@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "module": "ES2022",
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "declaration": true,
+    "declarationDir": "./dist/types/",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    //"allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["ES2021"]
+  },
+  "include": ["."],
+  "exclude": ["node_modules","dist"]
+}
