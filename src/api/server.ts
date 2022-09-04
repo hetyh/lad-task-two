@@ -1,16 +1,12 @@
 import * as Hapi from '@hapi/hapi';
 import { config } from 'dotenv';
 import testPlugin from './plugins/test.js';
-import { parse } from 'qs';
 
 config();
 
 const server: Hapi.Server = Hapi.server({
   port: process.env.HAPI_PORT || 3000,
   host: process.env.HAPI_HOST || '0.0.0.0',
-  query: {
-    parser: (query) => parse(query),
-  },
 });
 
 export async function createServer(): Promise<Hapi.Server> {

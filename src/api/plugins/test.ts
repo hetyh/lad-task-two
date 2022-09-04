@@ -1,7 +1,6 @@
 import * as Hapi from '@hapi/hapi';
 import { config } from 'dotenv';
 import { connect, Empty, StringCodec } from 'nats';
-import { notFound } from '@hapi/boom';
 
 config();
 
