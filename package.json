@@ -19,7 +19,6 @@
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
     "dotenv": "^16.0.2",
-    "joi": "^17.6.0",
     "nats": "^2.7.1",
     "pg": "^8.8.0",
     "reflect-metadata": "^0.1.13",
