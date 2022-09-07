@@ -23,7 +23,7 @@ async function testFind(request: Hapi.Request, h: Hapi.ResponseToolkit) {
     const stringCodec = StringCodec();
     const request = await natsConnection.request('test.find', Empty, { timeout: 1000 });
     const decodedData = stringCodec.decode(request.data);
-    return h.response(decodedData).code(200);
+    return h.response(decodedData).code(200).type('application/json; charset=utf-8');
   } catch (err) {
     console.error(err);
   }
