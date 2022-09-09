@@ -11,7 +11,8 @@
     "compile": "tsc",
     "start/api": "node dist/api/index.js",
     "start/storage": "node dist/storage/index.js",
-    "start": "npm run start/api & npm run start/storage"
+    "start": "npm run start/api & npm run start/storage",
+    "format": "prettier -w src *.md"
   },
   "keywords": [],
   "author": "",
