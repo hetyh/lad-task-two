@@ -1,7 +1,7 @@
-import { startServer } from './storage.js'
+import { startServer } from './storage.js';
 
 try {
-  await startServer()
+  await startServer();
 } catch (error) {
   console.log(error);
 }
