@@ -75,3 +75,13 @@ content-type: application/json; charset=utf-8
 - [nodemon](https://github.com/remy/nodemon) - автоматический перезапуск сервера при обновлении исходников
 - [typescript](https://github.com/Microsoft/TypeScript) - статическая типизация и инкрементальная компиляция при обновлении исходников
 - [prettier](https://github.com/prettier/prettier) - форматирование кода
+
+## Переменные среды
+
+- POSTGRES_USER - имя пользователя PostgreSQL
+- POSTGRES_PASSWORD - пароль пользователя PostgreSQL
+- POSTGRES_DB - название БД PostgreSQL
+- POSTGRES_PORT - порт сервера PostgreSQL
+- POSTGRES_HOST - адрес сервера PostgreSQL
+- NATS_HOST - адрес сервера NATS
+- NATS_PORT - порт сервера NATS
